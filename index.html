@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Flashcard</title>
+</head>
+<body>
+    <main>
+        <section id="container">
+            <!-- Cartões criados aqui -->
+        </section>
+
+        <div class="botoes">
+            <button id="btnLimpar">Limpar todos os flashcards</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Projeto desenvolvido pela Alura, sem fins lucrativos</p>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="perguntas.js"></script>
+
+    <script>
+      // Evento para o botão limpar
+      document.getElementById('btnLimpar').addEventListener('click', () => {
+          if (confirm('Deseja realmente limpar todos os flashcards?')) {
+              limparCartoes();
+          }
+      });
+    </script>
+</body>
+</html>
